@@ -2757,6 +2757,12 @@
 		(uuid "0b275545-ac5e-4a3c-ab6f-e9fdf3cbe937")
 	)
 	(junction
+		(at 205.74 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f667ae4-fad9-4447-8703-5dcd0ecb44c1")
+	)
+	(junction
 		(at 127 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3331,6 +3337,16 @@
 			(type default)
 		)
 		(uuid "275d1092-1987-4024-983a-cd23b6425d47")
+	)
+	(wire
+		(pts
+			(xy 205.74 63.5) (xy 205.74 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e1ef22-33af-46a8-a7f0-dcea0f1059c4")
 	)
 	(wire
 		(pts
@@ -3974,6 +3990,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 63.5) (xy 205.74 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79b5c256-0a04-40cc-b8fb-6c5bc32132e0")
+	)
+	(wire
+		(pts
 			(xy 218.44 92.71) (xy 218.44 102.87)
 		)
 		(stroke
@@ -4384,7 +4410,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 39.37) (xy 205.74 67.31)
+			(xy 205.74 39.37) (xy 205.74 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4511,6 +4537,16 @@
 			(type default)
 		)
 		(uuid "c2f1e940-81b4-4e69-8b15-0cca429d5f97")
+	)
+	(wire
+		(pts
+			(xy 233.68 67.31) (xy 233.68 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3d82e29-7641-45d1-b4f1-0c8b93de5b44")
 	)
 	(wire
 		(pts
@@ -4681,6 +4717,16 @@
 			(type default)
 		)
 		(uuid "d7592328-bda1-464e-86c0-18329b110566")
+	)
+	(wire
+		(pts
+			(xy 233.68 69.85) (xy 233.68 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8c9980d-12dc-4189-ae2d-3ff2ca2878d3")
 	)
 	(wire
 		(pts
@@ -5074,6 +5120,7 @@
 	)
 	(label "+1V"
 		(at 82.55 120.65 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5084,6 +5131,7 @@
 	)
 	(label "-22V"
 		(at 33.02 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5094,6 +5142,7 @@
 	)
 	(label "+22V"
 		(at 33.02 24.13 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5104,6 +5153,7 @@
 	)
 	(label "Input"
 		(at 200.66 54.61 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5114,6 +5164,7 @@
 	)
 	(label "MOD"
 		(at 106.68 123.19 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5124,6 +5175,7 @@
 	)
 	(label "Input"
 		(at 43.18 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5306,7 +5358,7 @@
 				)
 			)
 		)
-		(property "Value" "150"
+		(property "Value" "330"
 			(at 40.64 48.26 90)
 			(effects
 				(font
@@ -6125,7 +6177,7 @@
 				)
 			)
 		)
-		(property "Value" "150"
+		(property "Value" "330"
 			(at 40.64 21.59 90)
 			(effects
 				(font
@@ -8060,6 +8112,76 @@
 			(project "limiter-distortion"
 				(path "/ed4ae933-69cf-42d6-a171-9a67c59f030e"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 238.76 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94065f90-020d-4cf1-970f-be03140f11f9")
+		(property "Reference" "J9"
+			(at 240.03 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "pedal distortion"
+			(at 240.03 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 238.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 238.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "04562f90-8bd0-4e0a-8a72-01f213d0f878")
+		)
+		(pin "1"
+			(uuid "fccfaa49-43d0-4227-99ac-67a05abc7115")
+		)
+		(instances
+			(project "limiter-distortion"
+				(path "/ed4ae933-69cf-42d6-a171-9a67c59f030e"
+					(reference "J9")
 					(unit 1)
 				)
 			)
